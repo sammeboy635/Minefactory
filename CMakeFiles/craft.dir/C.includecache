@@ -6,17 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/samuel/Documents/cProgramming/glfwTesting/src/main.c
-stdlib.h
+/Users/samuel/Documents/C/Minefactory/src/cube.h
+
+/Users/samuel/Documents/C/Minefactory/src/linmath.h
+math.h
 -
-stdio.h
--
+
+/Users/samuel/Documents/C/Minefactory/src/main.c
 GL/glew.h
 -
 GLFW/glfw3.h
 -
-unistd.h
+linmath.h
+/Users/samuel/Documents/C/Minefactory/src/linmath.h
+stdio.h
 -
+cube.h
+/Users/samuel/Documents/C/Minefactory/src/cube.h
 
 deps/glew/include/GL/glew.h
 stddef.h

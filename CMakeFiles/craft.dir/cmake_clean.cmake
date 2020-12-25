@@ -4,7 +4,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/craft.dir/deps/noise/noise.c.o"
   "CMakeFiles/craft.dir/deps/sqlite/sqlite3.c.o"
   "CMakeFiles/craft.dir/deps/tinycthread/tinycthread.c.o"
+  "CMakeFiles/craft.dir/src/cube.c.o"
   "CMakeFiles/craft.dir/src/main.c.o"
+  "CMakeFiles/craft.dir/src/main1.c.o"
   "craft"
   "craft.pdb"
 )
