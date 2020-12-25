@@ -123,7 +123,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/craft.dir/DependInfo.cmake"
+  "CMakeFiles/main.dir/DependInfo.cmake"
   "deps/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "deps/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   "deps/glfw/examples/CMakeFiles/heightmap.dir/DependInfo.cmake"

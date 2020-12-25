@@ -30,7 +30,7 @@ int **cube_vertices_calc(int *x, int *y, int *z, int *X, int *Y, int *Z)
         x, y, z, x, y, Z, x, Y, Z, x, Y, z,
         X, y, Z, X, y, z, X, Y, z, X, Y, Z,
         X, y, z, x, y, z, x, Y, z, X, Y, z,
-        x, y, Z, x, y, Z, X, Y, Z, x, Y, Z};
+        x, y, Z, X, y, Z, X, Y, Z, x, Y, Z};
 
     bcopy(positions, ptr, sizeof(positions));
     //print(positions);
@@ -38,14 +38,21 @@ int **cube_vertices_calc(int *x, int *y, int *z, int *X, int *Y, int *Z)
 }
 void cube_calc(cubeCalculation *cc)
 {
+    int *x, *y, *z, *X, *Y, *Z;
+    x = &cc->x;
+    y = &cc->y;
+    z = &cc->z;
+    X = &cc->X;
+    Y = &cc->Y;
+    Z = &cc->Z;
 
     int *positions[72] = {
-        cc->x, cc->Y, cc->Z, cc->X, cc->Y, cc->Z, cc->X, cc->Y, cc->z, cc->x, cc->Y, cc->z,
-        cc->x, cc->y, cc->z, cc->X, cc->y, cc->z, cc->X, cc->y, cc->Z, cc->x, cc->y, cc->Z,
-        cc->x, cc->y, cc->z, cc->x, cc->y, cc->Z, cc->x, cc->Y, cc->Z, cc->x, cc->Y, cc->z,
-        cc->X, cc->y, cc->Z, cc->X, cc->y, cc->z, cc->X, cc->Y, cc->z, cc->X, cc->Y, cc->Z,
-        cc->X, cc->y, cc->z, cc->x, cc->y, cc->z, cc->x, cc->Y, cc->z, cc->X, cc->Y, cc->z,
-        cc->x, cc->y, cc->Z, cc->x, cc->y, cc->Z, cc->X, cc->Y, cc->Z, cc->x, cc->Y, cc->Z};
+        x, Y, Z, X, Y, Z, X, Y, z, x, Y, z,
+        x, y, z, X, y, z, X, y, Z, x, y, Z,
+        x, y, z, x, y, Z, x, Y, Z, x, Y, z,
+        X, y, Z, X, y, z, X, Y, z, X, Y, Z,
+        X, y, z, x, y, z, x, Y, z, X, Y, z,
+        x, y, Z, X, y, Z, X, Y, Z, x, Y, Z};
 
     bcopy(positions, cc->ptr, sizeof(positions));
 }
@@ -61,6 +68,7 @@ void cube_console_print(int **ptr)
         printf("\n");
     }
 }
+
 void vector3dint_print(vector3dInt positon)
 {
     printf("x = %d, y = %d, z = %d.\n", positon.x, positon.y, positon.z);

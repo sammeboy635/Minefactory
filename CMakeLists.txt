@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(craft)
+project(main)
 
 FILE(GLOB SOURCE_FILES src/*.c)
 
 add_executable(
-    craft
+    main
     ${SOURCE_FILES}
     deps/glew/src/glew.c
     deps/lodepng/lodepng.c
@@ -13,7 +13,7 @@ add_executable(
     deps/sqlite/sqlite3.c
     deps/tinycthread/tinycthread.c)
 
-add_definitions(-std=c99 -O3)
+add_definitions(-std=c99 -O3 -g)
 
 add_subdirectory(deps/glfw)
 include_directories(deps/glew/include)
@@ -34,16 +34,16 @@ find_package(CURL REQUIRED)
 include_directories(${CURL_INCLUDE_DIR})
 
 if(APPLE)
-    target_link_libraries(craft glfw
+    target_link_libraries(main glfw
         ${GLFW_LIBRARIES} ${CURL_LIBRARIES})
 endif()
 
 if(UNIX)
-    target_link_libraries(craft dl glfw
+    target_link_libraries(main dl glfw
         ${GLFW_LIBRARIES} ${CURL_LIBRARIES})
 endif()
 
 if(MINGW)
-    target_link_libraries(craft ws2_32.lib glfw
+    target_link_libraries(main ws2_32.lib glfw
         ${GLFW_LIBRARIES} ${CURL_LIBRARIES})
 endif()

@@ -149,7 +149,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=craft
+CMAKE_PROJECT_NAME:STATIC=main
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
@@ -297,6 +297,12 @@ craft_BINARY_DIR:STATIC=/Users/samuel/Documents/C/Minefactory
 
 //Value Computed by CMake
 craft_SOURCE_DIR:STATIC=/Users/samuel/Documents/C/Minefactory
+
+//Value Computed by CMake
+main_BINARY_DIR:STATIC=/Users/samuel/Documents/C/Minefactory
+
+//Value Computed by CMake
+main_SOURCE_DIR:STATIC=/Users/samuel/Documents/C/Minefactory
 
 
 ########################

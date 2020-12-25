@@ -1,10 +1,10 @@
 /Users/samuel/Documents/C/Minefactory/CMakeFiles/install/local.dir
+/Users/samuel/Documents/C/Minefactory/CMakeFiles/rebuild_cache.dir
+/Users/samuel/Documents/C/Minefactory/CMakeFiles/edit_cache.dir
 /Users/samuel/Documents/C/Minefactory/CMakeFiles/install/strip.dir
 /Users/samuel/Documents/C/Minefactory/CMakeFiles/install.dir
 /Users/samuel/Documents/C/Minefactory/CMakeFiles/list_install_components.dir
-/Users/samuel/Documents/C/Minefactory/CMakeFiles/rebuild_cache.dir
-/Users/samuel/Documents/C/Minefactory/CMakeFiles/edit_cache.dir
-/Users/samuel/Documents/C/Minefactory/CMakeFiles/craft.dir
+/Users/samuel/Documents/C/Minefactory/CMakeFiles/main.dir
 /Users/samuel/Documents/C/Minefactory/deps/glfw/CMakeFiles/install/local.dir
 /Users/samuel/Documents/C/Minefactory/deps/glfw/CMakeFiles/rebuild_cache.dir
 /Users/samuel/Documents/C/Minefactory/deps/glfw/CMakeFiles/edit_cache.dir

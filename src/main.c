@@ -3,7 +3,7 @@
 #include "linmath.h"
 #include <stdio.h>
 #include "cube.h"
-
+int y = 0;
 void controls(GLFWwindow *window, int key, int scancode, int action, int mods)
 {
     if (action == GLFW_PRESS)
@@ -51,7 +51,8 @@ GLFWwindow *initWindow(const int resX, const int resY)
 void drawCube()
 {
     cubeCalculation cc;
-    cube_init(&cc);
+    cube_set_pos(&cc, 0, y, 0);
+    cc.ptr = cube_vertices_calc(&cc.x, &cc.y, &cc.z, &cc.X, &cc.Y, &cc.Z);
     /*GLshort vertices[] =
         {
             -1, -1, -1, -1, -1, 1, -1, 1, 1, -1, 1, -1,
@@ -64,21 +65,21 @@ void drawCube()
     GLint vertices[72];
     for (int i = 0; i < 72; i++)
     {
-        vertices[i] = *cc.ptr[i];
+        vertices[i] = (GLint) * (cc.ptr[i]);
     }
-
+    //cube_console_print(cc.ptr);
     GLfloat colors[] =
         {
-            0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0,
-            1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0,
-            0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0,
-            0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0,
-            0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0,
-            0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1};
+            1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,
+            0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0,
+            0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,
+            1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1};
 
     static float alpha = 0;
     //attempt to rotate cube
-    //glRotatef(alpha, 0, 1, 0); //Rotates cube
+    glRotatef(alpha, 0, .5, 0); //Rotates cube
     /*vec4 m;
     mat4x4_identity(m);
     mat4x4_rotate_Y(m, m, (float)glfwGetTime());
@@ -123,7 +124,7 @@ void display(GLFWwindow *window)
 
         //Enables only one side of the quad to be displayed
         glEnable(GL_CULL_FACE);
-        glCullFace(GL_FRONT);
+        glCullFace(GL_BACK);
 
         //Drawing cube function
         drawCube();

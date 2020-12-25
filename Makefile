@@ -87,6 +87,28 @@ install/local/fast: preinstall/fast
 	/usr/local/Cellar/cmake/3.19.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/Cellar/cmake/3.19.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/local/Cellar/cmake/3.19.1/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -121,28 +143,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.19.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.19.1/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/samuel/Documents/C/Minefactory/CMakeFiles /Users/samuel/Documents/C/Minefactory//CMakeFiles/progress.marks
@@ -176,17 +176,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named craft
+# Target rules for targets named main
 
 # Build rule for target.
-craft: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 craft
-.PHONY : craft
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-craft/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/build
-.PHONY : craft/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -519,7 +519,7 @@ deps/glew/src/glew.o: deps/glew/src/glew.c.o
 
 # target to build an object file
 deps/glew/src/glew.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/glew/src/glew.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/glew/src/glew.c.o
 .PHONY : deps/glew/src/glew.c.o
 
 deps/glew/src/glew.i: deps/glew/src/glew.c.i
@@ -528,7 +528,7 @@ deps/glew/src/glew.i: deps/glew/src/glew.c.i
 
 # target to preprocess a source file
 deps/glew/src/glew.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/glew/src/glew.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/glew/src/glew.c.i
 .PHONY : deps/glew/src/glew.c.i
 
 deps/glew/src/glew.s: deps/glew/src/glew.c.s
@@ -537,7 +537,7 @@ deps/glew/src/glew.s: deps/glew/src/glew.c.s
 
 # target to generate assembly for a file
 deps/glew/src/glew.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/glew/src/glew.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/glew/src/glew.c.s
 .PHONY : deps/glew/src/glew.c.s
 
 deps/lodepng/lodepng.o: deps/lodepng/lodepng.c.o
@@ -546,7 +546,7 @@ deps/lodepng/lodepng.o: deps/lodepng/lodepng.c.o
 
 # target to build an object file
 deps/lodepng/lodepng.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/lodepng/lodepng.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/lodepng/lodepng.c.o
 .PHONY : deps/lodepng/lodepng.c.o
 
 deps/lodepng/lodepng.i: deps/lodepng/lodepng.c.i
@@ -555,7 +555,7 @@ deps/lodepng/lodepng.i: deps/lodepng/lodepng.c.i
 
 # target to preprocess a source file
 deps/lodepng/lodepng.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/lodepng/lodepng.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/lodepng/lodepng.c.i
 .PHONY : deps/lodepng/lodepng.c.i
 
 deps/lodepng/lodepng.s: deps/lodepng/lodepng.c.s
@@ -564,7 +564,7 @@ deps/lodepng/lodepng.s: deps/lodepng/lodepng.c.s
 
 # target to generate assembly for a file
 deps/lodepng/lodepng.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/lodepng/lodepng.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/lodepng/lodepng.c.s
 .PHONY : deps/lodepng/lodepng.c.s
 
 deps/noise/noise.o: deps/noise/noise.c.o
@@ -573,7 +573,7 @@ deps/noise/noise.o: deps/noise/noise.c.o
 
 # target to build an object file
 deps/noise/noise.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/noise/noise.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/noise/noise.c.o
 .PHONY : deps/noise/noise.c.o
 
 deps/noise/noise.i: deps/noise/noise.c.i
@@ -582,7 +582,7 @@ deps/noise/noise.i: deps/noise/noise.c.i
 
 # target to preprocess a source file
 deps/noise/noise.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/noise/noise.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/noise/noise.c.i
 .PHONY : deps/noise/noise.c.i
 
 deps/noise/noise.s: deps/noise/noise.c.s
@@ -591,7 +591,7 @@ deps/noise/noise.s: deps/noise/noise.c.s
 
 # target to generate assembly for a file
 deps/noise/noise.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/noise/noise.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/noise/noise.c.s
 .PHONY : deps/noise/noise.c.s
 
 deps/sqlite/sqlite3.o: deps/sqlite/sqlite3.c.o
@@ -600,7 +600,7 @@ deps/sqlite/sqlite3.o: deps/sqlite/sqlite3.c.o
 
 # target to build an object file
 deps/sqlite/sqlite3.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/sqlite/sqlite3.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/sqlite/sqlite3.c.o
 .PHONY : deps/sqlite/sqlite3.c.o
 
 deps/sqlite/sqlite3.i: deps/sqlite/sqlite3.c.i
@@ -609,7 +609,7 @@ deps/sqlite/sqlite3.i: deps/sqlite/sqlite3.c.i
 
 # target to preprocess a source file
 deps/sqlite/sqlite3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/sqlite/sqlite3.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/sqlite/sqlite3.c.i
 .PHONY : deps/sqlite/sqlite3.c.i
 
 deps/sqlite/sqlite3.s: deps/sqlite/sqlite3.c.s
@@ -618,7 +618,7 @@ deps/sqlite/sqlite3.s: deps/sqlite/sqlite3.c.s
 
 # target to generate assembly for a file
 deps/sqlite/sqlite3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/sqlite/sqlite3.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/sqlite/sqlite3.c.s
 .PHONY : deps/sqlite/sqlite3.c.s
 
 deps/tinycthread/tinycthread.o: deps/tinycthread/tinycthread.c.o
@@ -627,7 +627,7 @@ deps/tinycthread/tinycthread.o: deps/tinycthread/tinycthread.c.o
 
 # target to build an object file
 deps/tinycthread/tinycthread.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/tinycthread/tinycthread.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/tinycthread/tinycthread.c.o
 .PHONY : deps/tinycthread/tinycthread.c.o
 
 deps/tinycthread/tinycthread.i: deps/tinycthread/tinycthread.c.i
@@ -636,7 +636,7 @@ deps/tinycthread/tinycthread.i: deps/tinycthread/tinycthread.c.i
 
 # target to preprocess a source file
 deps/tinycthread/tinycthread.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/tinycthread/tinycthread.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/tinycthread/tinycthread.c.i
 .PHONY : deps/tinycthread/tinycthread.c.i
 
 deps/tinycthread/tinycthread.s: deps/tinycthread/tinycthread.c.s
@@ -645,7 +645,7 @@ deps/tinycthread/tinycthread.s: deps/tinycthread/tinycthread.c.s
 
 # target to generate assembly for a file
 deps/tinycthread/tinycthread.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/deps/tinycthread/tinycthread.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/tinycthread/tinycthread.c.s
 .PHONY : deps/tinycthread/tinycthread.c.s
 
 src/cube.o: src/cube.c.o
@@ -654,7 +654,7 @@ src/cube.o: src/cube.c.o
 
 # target to build an object file
 src/cube.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/src/cube.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/cube.c.o
 .PHONY : src/cube.c.o
 
 src/cube.i: src/cube.c.i
@@ -663,7 +663,7 @@ src/cube.i: src/cube.c.i
 
 # target to preprocess a source file
 src/cube.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/src/cube.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/cube.c.i
 .PHONY : src/cube.c.i
 
 src/cube.s: src/cube.c.s
@@ -672,7 +672,7 @@ src/cube.s: src/cube.c.s
 
 # target to generate assembly for a file
 src/cube.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/src/cube.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/cube.c.s
 .PHONY : src/cube.c.s
 
 src/main.o: src/main.c.o
@@ -681,7 +681,7 @@ src/main.o: src/main.c.o
 
 # target to build an object file
 src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/src/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.o
 .PHONY : src/main.c.o
 
 src/main.i: src/main.c.i
@@ -690,7 +690,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -699,7 +699,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 src/main1.o: src/main1.c.o
@@ -708,7 +708,7 @@ src/main1.o: src/main1.c.o
 
 # target to build an object file
 src/main1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/src/main1.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main1.c.o
 .PHONY : src/main1.c.o
 
 src/main1.i: src/main1.c.i
@@ -717,7 +717,7 @@ src/main1.i: src/main1.c.i
 
 # target to preprocess a source file
 src/main1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/src/main1.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main1.c.i
 .PHONY : src/main1.c.i
 
 src/main1.s: src/main1.c.s
@@ -726,7 +726,7 @@ src/main1.s: src/main1.c.s
 
 # target to generate assembly for a file
 src/main1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/craft.dir/build.make CMakeFiles/craft.dir/src/main1.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main1.c.s
 .PHONY : src/main1.c.s
 
 # Help Target
@@ -744,7 +744,6 @@ help:
 	@echo "... uninstall"
 	@echo "... boing"
 	@echo "... clipboard"
-	@echo "... craft"
 	@echo "... cursor"
 	@echo "... empty"
 	@echo "... events"
@@ -755,6 +754,7 @@ help:
 	@echo "... heightmap"
 	@echo "... iconify"
 	@echo "... joysticks"
+	@echo "... main"
 	@echo "... monitors"
 	@echo "... msaa"
 	@echo "... particles"

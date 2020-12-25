@@ -1,3 +1,7 @@
+#ifndef CUBE_H
+#define CUBE_H
+
+//blah blah blah
 
 typedef struct vector3dInt
 {
@@ -37,10 +41,11 @@ typedef struct cubeCalculation
     int Z;
     int **ptr;
 } cubeCalculation;
-
+typedef int GLint;
 void cube_init(cubeCalculation *cc);
 void cube_set_pos(cubeCalculation *cc, int x, int y, int z);
 int **cube_vertices_calc(int *x, int *y, int *z, int *X, int *Y, int *Z);
 void cube_calc(cubeCalculation *cc);
 void cube_console_print(int **position);
 void vector3dint_print(vector3dInt positon);
+#endif
