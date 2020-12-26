@@ -16,9 +16,14 @@ CMakeFiles/main.dir/deps/sqlite/sqlite3.c.o: deps/sqlite/sqlite3.c
 CMakeFiles/main.dir/deps/tinycthread/tinycthread.c.o: deps/tinycthread/tinycthread.c
 CMakeFiles/main.dir/deps/tinycthread/tinycthread.c.o: deps/tinycthread/tinycthread.h
 
+CMakeFiles/main.dir/src/chunk.c.o: src/chunk.c
+CMakeFiles/main.dir/src/chunk.c.o: src/chunk.h
+CMakeFiles/main.dir/src/chunk.c.o: src/cube.h
+
 CMakeFiles/main.dir/src/cube.c.o: src/cube.c
 CMakeFiles/main.dir/src/cube.c.o: src/cube.h
 
+CMakeFiles/main.dir/src/main.c.o: src/chunk.h
 CMakeFiles/main.dir/src/main.c.o: src/cube.h
 CMakeFiles/main.dir/src/main.c.o: src/linmath.h
 CMakeFiles/main.dir/src/main.c.o: src/main.c

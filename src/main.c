@@ -3,6 +3,7 @@
 #include "linmath.h"
 #include <stdio.h>
 #include "cube.h"
+#include "chunk.h"
 int y = 0;
 void controls(GLFWwindow *window, int key, int scancode, int action, int mods)
 {
@@ -51,8 +52,10 @@ GLFWwindow *initWindow(const int resX, const int resY)
 void drawCube()
 {
     cubeCalculation cc;
+    Chunk chunk;
     cube_set_pos(&cc, 0, y, 0);
     cc.ptr = cube_vertices_calc(&cc.x, &cc.y, &cc.z, &cc.X, &cc.Y, &cc.Z);
+    chunk_create_vertices(&chunk, &cc);
     /*GLshort vertices[] =
         {
             -1, -1, -1, -1, -1, 1, -1, 1, 1, -1, 1, -1,
@@ -62,11 +65,6 @@ void drawCube()
             -1, -1, -1, -1, 1, -1, 1, 1, -1, 1, -1, -1,
             -1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1};
 */
-    GLint vertices[72];
-    for (int i = 0; i < 72; i++)
-    {
-        vertices[i] = (GLint) * (cc.ptr[i]);
-    }
     //cube_console_print(cc.ptr);
     GLfloat colors[] =
         {
@@ -88,11 +86,11 @@ void drawCube()
     /* We have a color array and a vertex array */
     glEnableClientState(GL_VERTEX_ARRAY);
     glEnableClientState(GL_COLOR_ARRAY);
-    glVertexPointer(3, GL_INT, 0, vertices);
-    glColorPointer(3, GL_FLOAT, 0, colors);
-
+    glVertexPointer(3, GL_INT, 0, (GLint)chunk.vertices);
+    //glColorPointer(3, GL_FLOAT, 0, colors);
+    glColor3b(1, 1, 1);
     /* Send data : 24 vertices */
-    glDrawArrays(GL_QUADS, 0, 24);
+    glDrawArrays(GL_QUADS, 0, sizeof(chunk.vertices) / 12);
 
     /* Cleanup states */
     glDisableClientState(GL_COLOR_ARRAY);

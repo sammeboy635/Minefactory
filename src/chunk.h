@@ -1,8 +1,9 @@
-#include "cube.h"
-#define CHUNK_MAX_SIZE 32
+
 #ifndef CHUNK_H
 #define CHUNK_H
 
+#include "cube.h"
+#define CHUNK_MAX_SIZE 32
 #define CHUNK_MAX_HEIGHT 256
 #define CHUNK_HEIGHT 64
 

@@ -648,6 +648,33 @@ deps/tinycthread/tinycthread.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/deps/tinycthread/tinycthread.c.s
 .PHONY : deps/tinycthread/tinycthread.c.s
 
+src/chunk.o: src/chunk.c.o
+
+.PHONY : src/chunk.o
+
+# target to build an object file
+src/chunk.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chunk.c.o
+.PHONY : src/chunk.c.o
+
+src/chunk.i: src/chunk.c.i
+
+.PHONY : src/chunk.i
+
+# target to preprocess a source file
+src/chunk.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chunk.c.i
+.PHONY : src/chunk.c.i
+
+src/chunk.s: src/chunk.c.s
+
+.PHONY : src/chunk.s
+
+# target to generate assembly for a file
+src/chunk.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chunk.c.s
+.PHONY : src/chunk.c.s
+
 src/cube.o: src/cube.c.o
 
 .PHONY : src/cube.o
@@ -782,6 +809,9 @@ help:
 	@echo "... deps/tinycthread/tinycthread.o"
 	@echo "... deps/tinycthread/tinycthread.i"
 	@echo "... deps/tinycthread/tinycthread.s"
+	@echo "... src/chunk.o"
+	@echo "... src/chunk.i"
+	@echo "... src/chunk.s"
 	@echo "... src/cube.o"
 	@echo "... src/cube.i"
 	@echo "... src/cube.s"

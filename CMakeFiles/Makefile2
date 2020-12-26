@@ -216,12 +216,12 @@ deps/glfw/tests/clean: deps/glfw/tests/CMakeFiles/clipboard.dir/clean
 CMakeFiles/main.dir/all: deps/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51,52 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/samuel/Documents/C/Minefactory/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/samuel/Documents/C/Minefactory/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/samuel/Documents/C/Minefactory/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule
@@ -324,7 +324,7 @@ deps/glfw/examples/CMakeFiles/heightmap.dir/clean:
 deps/glfw/examples/CMakeFiles/wave.dir/all: deps/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f deps/glfw/examples/CMakeFiles/wave.dir/build.make deps/glfw/examples/CMakeFiles/wave.dir/depend
 	$(MAKE) $(MAKESILENT) -f deps/glfw/examples/CMakeFiles/wave.dir/build.make deps/glfw/examples/CMakeFiles/wave.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=78,79 "Built target wave"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=79,80 "Built target wave"
 .PHONY : deps/glfw/examples/CMakeFiles/wave.dir/all
 
 # Build rule for subdir invocation for target.
@@ -351,7 +351,7 @@ deps/glfw/examples/CMakeFiles/wave.dir/clean:
 deps/glfw/examples/CMakeFiles/splitview.dir/all: deps/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f deps/glfw/examples/CMakeFiles/splitview.dir/build.make deps/glfw/examples/CMakeFiles/splitview.dir/depend
 	$(MAKE) $(MAKESILENT) -f deps/glfw/examples/CMakeFiles/splitview.dir/build.make deps/glfw/examples/CMakeFiles/splitview.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=68,69 "Built target splitview"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=69,70 "Built target splitview"
 .PHONY : deps/glfw/examples/CMakeFiles/splitview.dir/all
 
 # Build rule for subdir invocation for target.
@@ -378,7 +378,7 @@ deps/glfw/examples/CMakeFiles/splitview.dir/clean:
 deps/glfw/examples/CMakeFiles/simple.dir/all: deps/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f deps/glfw/examples/CMakeFiles/simple.dir/build.make deps/glfw/examples/CMakeFiles/simple.dir/depend
 	$(MAKE) $(MAKESILENT) -f deps/glfw/examples/CMakeFiles/simple.dir/build.make deps/glfw/examples/CMakeFiles/simple.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=66,67 "Built target simple"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=67,68 "Built target simple"
 .PHONY : deps/glfw/examples/CMakeFiles/simple.dir/all
 
 # Build rule for subdir invocation for target.
@@ -405,7 +405,7 @@ deps/glfw/examples/CMakeFiles/simple.dir/clean:
 deps/glfw/examples/CMakeFiles/particles.dir/all: deps/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f deps/glfw/examples/CMakeFiles/particles.dir/build.make deps/glfw/examples/CMakeFiles/particles.dir/depend
 	$(MAKE) $(MAKESILENT) -f deps/glfw/examples/CMakeFiles/particles.dir/build.make deps/glfw/examples/CMakeFiles/particles.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=58,59,60,61 "Built target particles"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=59,60,61,62 "Built target particles"
 .PHONY : deps/glfw/examples/CMakeFiles/particles.dir/all
 
 # Build rule for subdir invocation for target.
@@ -486,7 +486,7 @@ deps/glfw/examples/CMakeFiles/boing.dir/clean:
 deps/glfw/tests/CMakeFiles/windows.dir/all: deps/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/windows.dir/build.make deps/glfw/tests/CMakeFiles/windows.dir/depend
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/windows.dir/build.make deps/glfw/tests/CMakeFiles/windows.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=80,81 "Built target windows"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=81,82 "Built target windows"
 .PHONY : deps/glfw/tests/CMakeFiles/windows.dir/all
 
 # Build rule for subdir invocation for target.
@@ -513,7 +513,7 @@ deps/glfw/tests/CMakeFiles/windows.dir/clean:
 deps/glfw/tests/CMakeFiles/title.dir/all: deps/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/title.dir/build.make deps/glfw/tests/CMakeFiles/title.dir/depend
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/title.dir/build.make deps/glfw/tests/CMakeFiles/title.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=76,77 "Built target title"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=77,78 "Built target title"
 .PHONY : deps/glfw/tests/CMakeFiles/title.dir/all
 
 # Build rule for subdir invocation for target.
@@ -540,7 +540,7 @@ deps/glfw/tests/CMakeFiles/title.dir/clean:
 deps/glfw/tests/CMakeFiles/threads.dir/all: deps/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/threads.dir/build.make deps/glfw/tests/CMakeFiles/threads.dir/depend
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/threads.dir/build.make deps/glfw/tests/CMakeFiles/threads.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=73,74,75 "Built target threads"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=74,75,76 "Built target threads"
 .PHONY : deps/glfw/tests/CMakeFiles/threads.dir/all
 
 # Build rule for subdir invocation for target.
@@ -567,7 +567,7 @@ deps/glfw/tests/CMakeFiles/threads.dir/clean:
 deps/glfw/tests/CMakeFiles/tearing.dir/all: deps/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/tearing.dir/build.make deps/glfw/tests/CMakeFiles/tearing.dir/depend
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/tearing.dir/build.make deps/glfw/tests/CMakeFiles/tearing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=70,71,72 "Built target tearing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=71,72,73 "Built target tearing"
 .PHONY : deps/glfw/tests/CMakeFiles/tearing.dir/all
 
 # Build rule for subdir invocation for target.
@@ -675,7 +675,7 @@ deps/glfw/tests/CMakeFiles/cursor.dir/clean:
 deps/glfw/tests/CMakeFiles/monitors.dir/all: deps/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/monitors.dir/build.make deps/glfw/tests/CMakeFiles/monitors.dir/depend
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/monitors.dir/build.make deps/glfw/tests/CMakeFiles/monitors.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=52,53,54 "Built target monitors"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=53,54,55 "Built target monitors"
 .PHONY : deps/glfw/tests/CMakeFiles/monitors.dir/all
 
 # Build rule for subdir invocation for target.
@@ -702,7 +702,7 @@ deps/glfw/tests/CMakeFiles/monitors.dir/clean:
 deps/glfw/tests/CMakeFiles/reopen.dir/all: deps/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/reopen.dir/build.make deps/glfw/tests/CMakeFiles/reopen.dir/depend
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/reopen.dir/build.make deps/glfw/tests/CMakeFiles/reopen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=62,63 "Built target reopen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=63,64 "Built target reopen"
 .PHONY : deps/glfw/tests/CMakeFiles/reopen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -837,7 +837,7 @@ deps/glfw/tests/CMakeFiles/gamma.dir/clean:
 deps/glfw/tests/CMakeFiles/sharing.dir/all: deps/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/sharing.dir/build.make deps/glfw/tests/CMakeFiles/sharing.dir/depend
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/sharing.dir/build.make deps/glfw/tests/CMakeFiles/sharing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=64,65 "Built target sharing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=65,66 "Built target sharing"
 .PHONY : deps/glfw/tests/CMakeFiles/sharing.dir/all
 
 # Build rule for subdir invocation for target.
@@ -864,7 +864,7 @@ deps/glfw/tests/CMakeFiles/sharing.dir/clean:
 deps/glfw/tests/CMakeFiles/msaa.dir/all: deps/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/msaa.dir/build.make deps/glfw/tests/CMakeFiles/msaa.dir/depend
 	$(MAKE) $(MAKESILENT) -f deps/glfw/tests/CMakeFiles/msaa.dir/build.make deps/glfw/tests/CMakeFiles/msaa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=55,56,57 "Built target msaa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=56,57,58 "Built target msaa"
 .PHONY : deps/glfw/tests/CMakeFiles/msaa.dir/all
 
 # Build rule for subdir invocation for target.

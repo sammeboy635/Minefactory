@@ -23,7 +23,7 @@ void chunk_create_vertices(Chunk *chunk, cubeCalculation *cc)
 		for (int z = 0; z < CHUNK_MAX_SIZE; z++)
 		{
 			cube_set_pos(cc, x, 0, z);
-			cube_console_print(cc->ptr);
+			//cube_console_print(cc->ptr);
 			for (int i = 0; i < 12; i++)
 			{
 				chunk->vertices[pos] = *cc->ptr[i];

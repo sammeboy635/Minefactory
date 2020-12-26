@@ -76,9 +76,22 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
+CMakeFiles/main.dir/src/chunk.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/chunk.c.o: src/chunk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/chunk.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/src/chunk.c.o -c /Users/samuel/Documents/C/Minefactory/src/chunk.c
+
+CMakeFiles/main.dir/src/chunk.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/chunk.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/samuel/Documents/C/Minefactory/src/chunk.c > CMakeFiles/main.dir/src/chunk.c.i
+
+CMakeFiles/main.dir/src/chunk.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/chunk.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/samuel/Documents/C/Minefactory/src/chunk.c -o CMakeFiles/main.dir/src/chunk.c.s
+
 CMakeFiles/main.dir/src/cube.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/cube.c.o: src/cube.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/cube.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/cube.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/src/cube.c.o -c /Users/samuel/Documents/C/Minefactory/src/cube.c
 
 CMakeFiles/main.dir/src/cube.c.i: cmake_force
@@ -91,7 +104,7 @@ CMakeFiles/main.dir/src/cube.c.s: cmake_force
 
 CMakeFiles/main.dir/src/main.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.c.o: src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/src/main.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/src/main.c.o -c /Users/samuel/Documents/C/Minefactory/src/main.c
 
 CMakeFiles/main.dir/src/main.c.i: cmake_force
@@ -104,7 +117,7 @@ CMakeFiles/main.dir/src/main.c.s: cmake_force
 
 CMakeFiles/main.dir/src/main1.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main1.c.o: src/main1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/src/main1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/src/main1.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/src/main1.c.o -c /Users/samuel/Documents/C/Minefactory/src/main1.c
 
 CMakeFiles/main.dir/src/main1.c.i: cmake_force
@@ -117,7 +130,7 @@ CMakeFiles/main.dir/src/main1.c.s: cmake_force
 
 CMakeFiles/main.dir/deps/glew/src/glew.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/deps/glew/src/glew.c.o: deps/glew/src/glew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/deps/glew/src/glew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/deps/glew/src/glew.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/deps/glew/src/glew.c.o -c /Users/samuel/Documents/C/Minefactory/deps/glew/src/glew.c
 
 CMakeFiles/main.dir/deps/glew/src/glew.c.i: cmake_force
@@ -130,7 +143,7 @@ CMakeFiles/main.dir/deps/glew/src/glew.c.s: cmake_force
 
 CMakeFiles/main.dir/deps/lodepng/lodepng.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/deps/lodepng/lodepng.c.o: deps/lodepng/lodepng.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/deps/lodepng/lodepng.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/main.dir/deps/lodepng/lodepng.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/deps/lodepng/lodepng.c.o -c /Users/samuel/Documents/C/Minefactory/deps/lodepng/lodepng.c
 
 CMakeFiles/main.dir/deps/lodepng/lodepng.c.i: cmake_force
@@ -143,7 +156,7 @@ CMakeFiles/main.dir/deps/lodepng/lodepng.c.s: cmake_force
 
 CMakeFiles/main.dir/deps/noise/noise.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/deps/noise/noise.c.o: deps/noise/noise.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/main.dir/deps/noise/noise.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/main.dir/deps/noise/noise.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/deps/noise/noise.c.o -c /Users/samuel/Documents/C/Minefactory/deps/noise/noise.c
 
 CMakeFiles/main.dir/deps/noise/noise.c.i: cmake_force
@@ -156,7 +169,7 @@ CMakeFiles/main.dir/deps/noise/noise.c.s: cmake_force
 
 CMakeFiles/main.dir/deps/sqlite/sqlite3.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/deps/sqlite/sqlite3.c.o: deps/sqlite/sqlite3.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/main.dir/deps/sqlite/sqlite3.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/main.dir/deps/sqlite/sqlite3.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/deps/sqlite/sqlite3.c.o -c /Users/samuel/Documents/C/Minefactory/deps/sqlite/sqlite3.c
 
 CMakeFiles/main.dir/deps/sqlite/sqlite3.c.i: cmake_force
@@ -169,7 +182,7 @@ CMakeFiles/main.dir/deps/sqlite/sqlite3.c.s: cmake_force
 
 CMakeFiles/main.dir/deps/tinycthread/tinycthread.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/deps/tinycthread/tinycthread.c.o: deps/tinycthread/tinycthread.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/main.dir/deps/tinycthread/tinycthread.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/main.dir/deps/tinycthread/tinycthread.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/deps/tinycthread/tinycthread.c.o -c /Users/samuel/Documents/C/Minefactory/deps/tinycthread/tinycthread.c
 
 CMakeFiles/main.dir/deps/tinycthread/tinycthread.c.i: cmake_force
@@ -182,6 +195,7 @@ CMakeFiles/main.dir/deps/tinycthread/tinycthread.c.s: cmake_force
 
 # Object files for target main
 main_OBJECTS = \
+"CMakeFiles/main.dir/src/chunk.c.o" \
 "CMakeFiles/main.dir/src/cube.c.o" \
 "CMakeFiles/main.dir/src/main.c.o" \
 "CMakeFiles/main.dir/src/main1.c.o" \
@@ -194,6 +208,7 @@ main_OBJECTS = \
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
+main: CMakeFiles/main.dir/src/chunk.c.o
 main: CMakeFiles/main.dir/src/cube.c.o
 main: CMakeFiles/main.dir/src/main.c.o
 main: CMakeFiles/main.dir/src/main1.c.o
@@ -208,7 +223,7 @@ main: /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib/libcurl.tb
 main: deps/glfw/src/libglfw3.a
 main: /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/lib/libcurl.tbd
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/samuel/Documents/C/Minefactory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
