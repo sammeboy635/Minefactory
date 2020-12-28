@@ -85,8 +85,9 @@ void drawCube()
     mat4x4_mul(mvp, p, m);*/
     /* We have a color array and a vertex array */
     glEnableClientState(GL_VERTEX_ARRAY);
+    glBindBuffer(GL_ARRAY_BUFFER, chunk.vertices);
     glEnableClientState(GL_COLOR_ARRAY);
-    glVertexPointer(3, GL_INT, 0, (GLint)chunk.vertices);
+    //glVertexPointer(3, GL_INT, 0, (GLint)chunk.vertices);
     //glColorPointer(3, GL_FLOAT, 0, colors);
     glColor3b(1, 1, 1);
     /* Send data : 24 vertices */
